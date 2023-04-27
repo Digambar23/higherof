@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+const arr =["play cricket","play vidioe game","play chess"]
 function App() {
+  console.log("Hello World")
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul>
+        {
+          arr.map((el)=>
+          {
+            return
+            <li>{el}</li>
+          })
+        }
+      </ul>
     </div>
   );
 }
